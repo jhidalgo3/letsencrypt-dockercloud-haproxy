@@ -15,8 +15,8 @@ services:
   letsencrypt:
     build: letsencrypt
     environment:
-      - DOMAINS=foo.com,www.foo.com;ba.com,www.bar.com
-      - EMAIL=admins@foo.com
+      - DOMAINS=registry.jhidalgo3.me
+      - EMAIL=jhidalgo3@gmail.com
       - LOAD_BALANCER_SERVICE_NAME=haproxy
       # THIS IS CRUCIAL when testing to avoid reaching the 5 certificates
       # limit per domain. You'll end up waiting a week before being able 
